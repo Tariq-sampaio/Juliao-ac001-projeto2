@@ -1,0 +1,122 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+/* Main com Flexbox */
+.main-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 10%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Informações do produto */
+.product-info {
+  max-width: 500px;
+}
+
+.product-info h2 {
+  color: #007BFF;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.product-info p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.product-info ul {
+  margin-bottom: 25px;
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+}
+
+/* Botões */
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #e9ecef;
+  color: #007BFF;
+  border: 2px solid #007BFF;
+}
+
+.btn-secondary:hover {
+  background-color: #d6e4ff;
+}
+
+/* Imagem do produto */
+.product-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  background-color: #e9ecef;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-image img {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
